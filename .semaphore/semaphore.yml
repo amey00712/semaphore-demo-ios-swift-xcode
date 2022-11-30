@@ -13,3 +13,14 @@ blocks:
             - checkout
             - swift build -v
             - swift test -v
+    dependencies: []
+  - name: 'Block #2'
+    dependencies: []
+    task:
+      jobs:
+        - name: 'Job #1'
+          commands:
+            - checkout
+            - cache restore
+            - bundle install --path vendor/bundle
+            - cache store
