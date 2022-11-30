@@ -11,8 +11,7 @@ blocks:
         - name: swift test
           commands:
             - checkout
-            - swift build -v
-            - swift test -v
+            - bundle exec fastlane test
     dependencies: []
   - name: 'Block #2'
     dependencies: []
